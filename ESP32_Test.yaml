@@ -1,0 +1,120 @@
+esphome:
+  name: esp32_test
+  platform: ESP32
+  board: esp-wrover-kit
+  includes:
+    - bentel_kyo32.h
+
+wifi:
+  ssid: "xxxx"
+  password: "xxxx"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp32 Test Fallback Hotspot"
+    password: "xxxx"
+
+captive_portal:
+
+# Enable logging
+logger:
+  level: VERBOSE
+  baud_rate: 0
+
+# Enable Home Assistant API
+api:
+  password: "xxxx"
+
+ota:
+  password: "xxxx"
+
+uart:
+  id: uart_bus
+  tx_pin: GPIO17
+  rx_pin: GPIO16
+  baud_rate: 9600
+  data_bits: 8
+  parity: EVEN
+  
+#time:
+#  - platform: homeassistant
+#    id: homeassistant_time
+#    on_time:
+#      # Every 5 minutes
+#      - seconds: /5
+#        then:
+#          - uart.write: [0xF0, 0x04, 0xF0, 0x0A, 0x00, 0xEE]
+
+binary_sensor:
+  - platform: template
+    id: zona_1
+    name: "IR Sala"
+    lambda: "return {};"
+  - platform: template
+    id: zona_2
+    name: "Porta Ingresso"
+    lambda: "return {};"
+  - platform: template
+    id: zona_3
+    name: "Finestra Sala"
+    lambda: "return {};"
+  - platform: template
+    id: zona_4
+    name: "Porta Finestra Cucina"
+    lambda: "return {};"
+  - platform: template
+    id: zona_5
+    name: "Finestra Cucina"
+    lambda: "return {};"
+  - platform: template
+    id: zona_6
+    name: "IR Taverna"
+    lambda: "return {};"
+  - platform: template
+    id: zona_7
+    name: "Basculanti Garage"
+    lambda: "return {};"
+  - platform: template
+    id: zona_8
+    name: "Portico"
+    lambda: "return {};"
+  - platform: template
+    id: zona_9
+    name: "IR Camere"
+    lambda: "return {};"
+  - platform: template
+    id: zona_10
+    name: "Finestra Cameretta"
+    lambda: "return {};"
+  - platform: template
+    id: zona_11
+    name: "Finestra Camera Armadio"
+    lambda: "return {};"
+  - platform: template
+    id: zona_12
+    name: "Finestra Camera Matrimoniale"
+    lambda: "return {};"
+  - platform: template
+    id: zona_13
+    name: "Finestra Bagno notte"
+    lambda: "return {};"
+  - platform: template
+    id: zona_14
+    name: "Zona 14  "
+    lambda: "return {};"
+  - platform: template
+    id: zona_15
+    name: "Zona Inserimento"
+    lambda: "return {};"
+  - platform: template
+    id: zona_16
+    name: "Telecamere"
+    lambda: "return {};"
+
+custom_component:
+- lambda: |-
+    auto my_x61 = new Bentel_Kyo32(id(uart_bus),id(zona_1),id(zona_2),id(zona_3),id(zona_4),id(zona_5),id(zona_6),id(zona_7),id(zona_8),id(zona_9),id(zona_10),id(zona_11),id(zona_12),id(zona_13),id(zona_14),id(zona_15),id(zona_16));
+    App.register_component(my_x61);
+    return {my_x61};
+
+    
