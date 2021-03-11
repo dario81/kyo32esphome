@@ -50,7 +50,10 @@ binary_sensor:
     lambda: |-
       auto kyo32 = new Bentel_Kyo32(id(uart_bus));
       App.register_component(kyo32);
-      return {kyo32->zona[0], kyo32->zona[1], kyo32->zona[2], kyo32->zona[3], kyo32->zona[4], kyo32->zona[5], kyo32->zona[6], kyo32->zona[7], kyo32->zona[8], kyo32->zona[9], kyo32->zona[10], kyo32->zona[12], kyo32->zona[12], kyo32->zona[13], kyo32->zona[14], kyo32->zona[15]};
+      return {kyo32->zona[0], kyo32->zona[1], kyo32->zona[2], kyo32->zona[3], kyo32->zona[4], kyo32->zona[5], kyo32->zona[6], kyo32->zona[7], kyo32->zona[8], kyo32->zona[9], kyo32->zona[10], kyo32->zona[11], kyo32->zona[12], kyo32->zona[13], kyo32->zona[14], kyo32->zona[15],
+      kyo32->zona_sabotaggio[0], kyo32->zona_sabotaggio[1], kyo32->zona_sabotaggio[2], kyo32->zona_sabotaggio[3], kyo32->zona_sabotaggio[4], kyo32->zona_sabotaggio[5], kyo32->zona_sabotaggio[6], kyo32->zona_sabotaggio[7], kyo32->zona_sabotaggio[8], kyo32->zona_sabotaggio[9], kyo32->zona_sabotaggio[10], kyo32->zona_sabotaggio[11], kyo32->zona_sabotaggio[12], kyo32->zona_sabotaggio[13], kyo32->zona_sabotaggio[14], kyo32->zona_sabotaggio[15],
+      kyo32->warn_mancanza_rete, kyo32->warn_scomparsa_bpi, kyo32->warn_fusibile, kyo32->warn_batteria_bassa, kyo32->warn_guasto_linea_telefonica, kyo32->warn_codici_default, kyo32->warn_wireless,
+      kyo32->sabotaggio_zona, kyo32->sabotaggio_chiave_falsa, kyo32->sabotaggio_bpi, kyo32->sabotaggio_sistema, kyo32->sabotaggio_jam, kyo32->sabotaggio_wireless};
     binary_sensors:
       - id: zona_1
         name: "IR Sala"
@@ -84,4 +87,49 @@ binary_sensor:
         name: "Zona Inserimento"
       - id: zona_16
         name: "Telecamere"
+      - id: sab_zona_1
+        name: "Sabotaggio IR Sala"
+      - id: sab_zona_2
+        name: "Sabotaggio Porta Ingresso"
+      - id: sab_zona_3
+        name: "Sabotaggio Finestra Sala"
+      - id: sab_zona_4
+        name: "Sabotaggio Porta Finestra Cucina"
+      - id: sab_zona_5
+        name: "Sabotaggio Finestra Cucina"
+      - id: sab_zona_6
+        name: "Sabotaggio IR Taverna"
+      - id: sab_zona_7
+        name: "Sabotaggio Basculanti Garage"
+      - id: sab_zona_8
+        name: "Sabotaggio Portico"
+      - id: sab_zona_9
+        name: "Sabotaggio IR Camere"
+      - id: sab_zona_10
+        name: "Sabotaggio Finestra Cameretta"
+      - id: sab_zona_11
+        name: "Sabotaggio Finestra Camera Armadio"
+      - id: sab_zona_12
+        name: "Sabotaggio Finestra Camera Matrimoniale"
+      - id: sab_zona_13
+        name: "Sabotaggio Finestra Bagno notte"
+      - id: sab_zona_14
+        name: "Sabotaggio Zona 14  "
+      - id: sab_zona_15
+        name: "Sabotaggio Zona Inserimento"
+      - id: sab_zona_16
+        name: "Sabotaggio Telecamere"
+      - id: warn_mancanza_rete
+      - id: warn_scomparsa_bpi
+      - id: warn_fusibile
+      - id: warn_batteria_bassa
+      - id: warn_guasto_linea_telefonica
+      - id: warn_codici_default
+      - id: warn_wireless
+      - id: sabotaggio_zona
+      - id: sabotaggio_chiave_falsa
+      - id: sabotaggio_bpi
+      - id: sabotaggio_sistema
+      - id: sabotaggio_jam
+      - id: sabotaggio_wireless
     
