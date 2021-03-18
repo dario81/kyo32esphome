@@ -1,14 +1,77 @@
 #include "esphome.h"
 
-#define SENSOR_CNT 4
+#define N_ZONE 32
 
-class Bentel_Kyo32 : public PollingComponent, public UARTDevice
+class Bentel_Kyo32 : public PollingComponent, public UARTDevice, public CustomAPIDevice
 {
 public:
   Bentel_Kyo32(UARTComponent *parent) : UARTDevice(parent) {}
 
-  BinarySensor *zona[32];
-  BinarySensor *zona_sabotaggio[32];
+  BinarySensor *zona_1 = new BinarySensor();
+  BinarySensor *zona_2 = new BinarySensor();
+  BinarySensor *zona_3 = new BinarySensor();
+  BinarySensor *zona_4 = new BinarySensor();
+  BinarySensor *zona_5 = new BinarySensor();
+  BinarySensor *zona_6 = new BinarySensor();
+  BinarySensor *zona_7 = new BinarySensor();
+  BinarySensor *zona_8 = new BinarySensor();
+  BinarySensor *zona_9 = new BinarySensor();
+  BinarySensor *zona_10 = new BinarySensor();
+  BinarySensor *zona_11 = new BinarySensor();
+  BinarySensor *zona_12 = new BinarySensor();
+  BinarySensor *zona_13 = new BinarySensor();
+  BinarySensor *zona_14 = new BinarySensor();
+  BinarySensor *zona_15 = new BinarySensor();
+  BinarySensor *zona_16 = new BinarySensor();
+  BinarySensor *zona_17 = new BinarySensor();
+  BinarySensor *zona_18 = new BinarySensor();
+  BinarySensor *zona_19 = new BinarySensor();
+  BinarySensor *zona_20 = new BinarySensor();
+  BinarySensor *zona_21 = new BinarySensor();
+  BinarySensor *zona_22 = new BinarySensor();
+  BinarySensor *zona_23 = new BinarySensor();
+  BinarySensor *zona_24 = new BinarySensor();
+  BinarySensor *zona_25 = new BinarySensor();
+  BinarySensor *zona_26 = new BinarySensor();
+  BinarySensor *zona_27 = new BinarySensor();
+  BinarySensor *zona_28 = new BinarySensor();
+  BinarySensor *zona_29 = new BinarySensor();
+  BinarySensor *zona_30 = new BinarySensor();
+  BinarySensor *zona_31 = new BinarySensor();
+  BinarySensor *zona_32 = new BinarySensor();
+
+  BinarySensor *zona_sabotaggio_1 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_2 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_3 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_4 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_5 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_6 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_7 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_8 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_9 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_10 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_11 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_12 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_13 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_14 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_15 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_16 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_17 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_18 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_19 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_20 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_21 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_22 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_23 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_24 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_25 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_26 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_27 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_28 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_29 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_30 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_31 = new BinarySensor();
+  BinarySensor *zona_sabotaggio_32 = new BinarySensor();
 
   BinarySensor *warn_mancanza_rete = new BinarySensor("Warning Mancanza Rete");
   BinarySensor *warn_scomparsa_bpi = new BinarySensor("Warning Scomparsa BPI");;
@@ -18,7 +81,14 @@ public:
   BinarySensor *warn_codici_default = new BinarySensor("Warning Codici Default");;
   BinarySensor *warn_wireless = new BinarySensor("Warning Wireless");;
 
-  BinarySensor *allarme_area[8];
+  BinarySensor *allarme_area_1 = new BinarySensor();
+  BinarySensor *allarme_area_2 = new BinarySensor();
+  BinarySensor *allarme_area_3 = new BinarySensor();
+  BinarySensor *allarme_area_4 = new BinarySensor();
+  BinarySensor *allarme_area_5 = new BinarySensor();
+  BinarySensor *allarme_area_6 = new BinarySensor();
+  BinarySensor *allarme_area_7 = new BinarySensor();
+  BinarySensor *allarme_area_8 = new BinarySensor();
 
   BinarySensor *sabotaggio_zona = new BinarySensor("Sabotaggio di Zona");;
   BinarySensor *sabotaggio_chiave_falsa = new BinarySensor("Sabotaggio Chiave Falsa");;
@@ -28,6 +98,7 @@ public:
   BinarySensor *sabotaggio_wireless = new BinarySensor("Sabotaggio Wireless");;
 
   byte cmdGetSensorStatus[6] = {0xf0, 0x04, 0xf0, 0x0a, 0x00, 0xee}; // f0 04 f0 0a 00 ee
+  byte cmqGetSoftwareVersion[6] = {0xf0, 0x00, 0x00, 0x0b, 0x00, 0xfb}; // f0 00 00 0b 00 fb
 
   bool getParm(byte *cmd, int lcmd, byte ReadByes[], int &CountBytes)
   {
@@ -60,7 +131,63 @@ public:
 
   void setup() override
   {
+    register_service(&Bentel_Kyo32::on_clock_setting, "clock_setting",
+                     {"pin", "day", "month", "year", "hour", "minutes", "seconds", "data_format"});
+
+    register_service(&Bentel_Kyo32::on_arm_partitions, "arm_partitions",
+                     {"pin", "partition_mask", "type"});
+
+    register_service(&Bentel_Kyo32::on_reset_alarms, "reset_alarms",
+                     {"pin"});
+
+    register_service(&Bentel_Kyo32::on_bypass_zone, "bypass_zone",
+                     {"pin", "zone_number"});
+    
+    register_service(&Bentel_Kyo32::on_unbypass_zone, "unbypass_zone",
+                     {"pin", "zone_number"});
+    
+    register_service(&Bentel_Kyo32::on_activate_output, "activate_output",
+                     {"pin", "output_number"});
+    
+    register_service(&Bentel_Kyo32::on_deactivate_output, "deactivate_output",
+                     {"pin", "output_number"}); 
+
     this->set_update_interval(5000);
+  }
+
+  void on_clock_setting(int pin, int day, int month, int year, int hour, int minutes, int seconds, int data_format)
+  {
+    ESP_LOGD("custom", "Clock Setting. PIN: %d, Day: %d, Month: %d, Year: %d, Hour: %d, Minutes: %d, Seconds: %d, Data Format: %d", pin, day, month, year, hour, minutes, seconds, data_format);
+  }
+
+  void on_arm_partitions(int pin, int partition_mask, int type)
+  {
+    ESP_LOGD("custom", "Arm Partitions. PIN: %d, Partition Mask: %d, Type: %d", pin, partition_mask, type);
+  }
+
+  void on_reset_alarms(int pin)
+  {
+    ESP_LOGD("custom", "Reset Alarms. PIN: %d", pin);
+  }
+
+  void on_bypass_zone(int pin, int zone_number)
+  {
+    ESP_LOGD("custom", "Bypass Zone. PIN: %d, Zone Number: %d", pin, zone_number);
+  }
+
+  void on_unbypass_zone(int pin, int zone_number)
+  {
+    ESP_LOGD("custom", "UnBypass Zone. PIN: %d, Zone Number: %d", pin, zone_number);
+  }
+
+  void on_activate_output(int pin, int output_number)
+  {
+    ESP_LOGD("custom", "Activate Output. PIN: %d, Output Number: %d", pin, output_number);
+  }
+
+  void on_deactivate_output(int pin, int output_number)
+  {
+    ESP_LOGD("custom", "Deactivate Output. PIN: %d, Output Number: %d", pin, output_number);
   }
 
   void loop() override
@@ -104,13 +231,109 @@ public:
         {
           val = false;
         }
-        if (zona[i] == nullptr)
+
+        switch (i)
         {
-          zona[i] = new BinarySensor("Allarme Zona " + to_string(i));
+        case 0:
+          zona_1->publish_state(val);
+          break;
+        case 1:
+          zona_2->publish_state(val);
+          break;
+        case 2:
+          zona_3->publish_state(val);
+          break;
+        case 3:
+          zona_4->publish_state(val);
+          break;
+        case 4:
+          zona_5->publish_state(val);
+          break;
+        case 5:
+          zona_6->publish_state(val);
+          break;
+        case 6:
+          zona_7->publish_state(val);
+          break;
+        case 7:
+          zona_8->publish_state(val);
+          break;
+        case 8:
+          zona_9->publish_state(val);
+          break;
+        case 9:
+          zona_10->publish_state(val);
+          break;
+        case 10:
+          zona_11->publish_state(val);
+          break;
+        case 11:
+          zona_12->publish_state(val);
+          break;
+        case 12:
+          zona_13->publish_state(val);
+          break;
+        case 13:
+          zona_14->publish_state(val);
+          break;
+        case 14:
+          zona_15->publish_state(val);
+          break;
+        case 15:
+          zona_16->publish_state(val);
+          break;
+        case 16:
+          zona_17->publish_state(val);
+          break;
+        case 17:
+          zona_18->publish_state(val);
+          break;
+        case 18:
+          zona_19->publish_state(val);
+          break;
+        case 19:
+          zona_20->publish_state(val);
+          break;
+        case 20:
+          zona_21->publish_state(val);
+          break;
+        case 21:
+          zona_22->publish_state(val);
+          break;
+        case 22:
+          zona_23->publish_state(val);
+          break;
+        case 23:
+          zona_24->publish_state(val);
+          break;
+        case 24:
+          zona_25->publish_state(val);
+          break;
+        case 25:
+          zona_26->publish_state(val);
+          break;
+        case 26:
+          zona_27->publish_state(val);
+          break;
+        case 27:
+          zona_28->publish_state(val);
+          break;
+        case 28:
+          zona_29->publish_state(val);
+          break;
+        case 29:
+          zona_30->publish_state(val);
+          break;
+        case 30:
+          zona_31->publish_state(val);
+          break;
+        case 31:
+          zona_32->publish_state(val);
+          break;
         }
-        zona[i]->publish_state(val);
       }
 
+      
       // Ciclo SABOTAGGIO ZONE
       for (i = 0; i < 32; i++)
       {
@@ -134,12 +357,108 @@ public:
         {
           val = false;
         }
-        if (zona_sabotaggio[i] == nullptr)
+        
+        switch (i)
         {
-          zona_sabotaggio[i] = new BinarySensor("Sabotaggio Zona "  + to_string(i));
+        case 0:
+          zona_sabotaggio_1->publish_state(val);
+          break;
+        case 1:
+          zona_sabotaggio_2->publish_state(val);
+          break;
+        case 2:
+          zona_sabotaggio_3->publish_state(val);
+          break;
+        case 3:
+          zona_sabotaggio_4->publish_state(val);
+          break;
+        case 4:
+          zona_sabotaggio_5->publish_state(val);
+          break;
+        case 5:
+          zona_sabotaggio_6->publish_state(val);
+          break;
+        case 6:
+          zona_sabotaggio_7->publish_state(val);
+          break;
+        case 7:
+          zona_sabotaggio_8->publish_state(val);
+          break;
+        case 8:
+          zona_sabotaggio_9->publish_state(val);
+          break;
+        case 9:
+          zona_sabotaggio_10->publish_state(val);
+          break;
+        case 10:
+          zona_sabotaggio_11->publish_state(val);
+          break;
+        case 11:
+          zona_sabotaggio_12->publish_state(val);
+          break;
+        case 12:
+          zona_sabotaggio_13->publish_state(val);
+          break;
+        case 13:
+          zona_sabotaggio_14->publish_state(val);
+          break;
+        case 14:
+          zona_sabotaggio_15->publish_state(val);
+          break;
+        case 15:
+          zona_sabotaggio_16->publish_state(val);
+          break;
+        case 16:
+          zona_sabotaggio_17->publish_state(val);
+          break;
+        case 17:
+          zona_sabotaggio_18->publish_state(val);
+          break;
+        case 18:
+          zona_sabotaggio_19->publish_state(val);
+          break;
+        case 19:
+          zona_sabotaggio_20->publish_state(val);
+          break;
+        case 20:
+          zona_sabotaggio_21->publish_state(val);
+          break;
+        case 21:
+          zona_sabotaggio_22->publish_state(val);
+          break;
+        case 22:
+          zona_sabotaggio_23->publish_state(val);
+          break;
+        case 23:
+          zona_sabotaggio_24->publish_state(val);
+          break;
+        case 24:
+          zona_sabotaggio_25->publish_state(val);
+          break;
+        case 25:
+          zona_sabotaggio_26->publish_state(val);
+          break;
+        case 26:
+          zona_sabotaggio_27->publish_state(val);
+          break;
+        case 27:
+          zona_sabotaggio_28->publish_state(val);
+          break;
+        case 28:
+          zona_sabotaggio_29->publish_state(val);
+          break;
+        case 29:
+          zona_sabotaggio_30->publish_state(val);
+          break;
+        case 30:
+          zona_sabotaggio_31->publish_state(val);
+          break;
+        case 31:
+          zona_sabotaggio_32->publish_state(val);
+          break;
         }
-        zona_sabotaggio[i]->publish_state(val);
       }
+
 
       // Ciclo WARNINGS
       for (i = 0; i < 8; i++)
@@ -188,6 +507,7 @@ public:
         
       }
 
+
       // Ciclo ALLARME AREA
       for (i = 0; i < 8; i++)
       {
@@ -203,11 +523,34 @@ public:
         {
           val = false;
         }
-        if (allarme_area[i] == nullptr)
+        
+        switch (i)
         {
-          allarme_area[i] = new BinarySensor("Allarme Area " + to_string(i));
+        case 0:
+          allarme_area_1->publish_state(val);
+          break;
+        case 1:
+          allarme_area_2->publish_state(val);
+          break;
+        case 2:
+          allarme_area_3->publish_state(val);
+          break;
+        case 3:
+          allarme_area_4->publish_state(val);
+          break;
+        case 4:
+          allarme_area_5->publish_state(val);
+          break;
+        case 5:
+          allarme_area_6->publish_state(val);
+          break;
+        case 6:
+          allarme_area_7->publish_state(val);
+          break;
+        case 7:
+          allarme_area_8->publish_state(val);
+          break;
         }
-        allarme_area[i]->publish_state(val);
       }
 
       // Ciclo SABOTAGGI
