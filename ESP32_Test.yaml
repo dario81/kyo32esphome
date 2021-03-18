@@ -45,91 +45,111 @@ uart:
 #        then:
 #          - uart.write: [0xF0, 0x04, 0xF0, 0x0A, 0x00, 0xEE]
 
+
 binary_sensor:
   - platform: custom
     lambda: |-
       auto kyo32 = new Bentel_Kyo32(id(uart_bus));
       App.register_component(kyo32);
-      return {kyo32->zona[0], kyo32->zona[1], kyo32->zona[2], kyo32->zona[3], kyo32->zona[4], kyo32->zona[5], kyo32->zona[6], kyo32->zona[7], kyo32->zona[8], kyo32->zona[9], kyo32->zona[10], kyo32->zona[11], kyo32->zona[12], kyo32->zona[13], kyo32->zona[14], kyo32->zona[15],
-      kyo32->zona_sabotaggio[0], kyo32->zona_sabotaggio[1], kyo32->zona_sabotaggio[2], kyo32->zona_sabotaggio[3], kyo32->zona_sabotaggio[4], kyo32->zona_sabotaggio[5], kyo32->zona_sabotaggio[6], kyo32->zona_sabotaggio[7], kyo32->zona_sabotaggio[8], kyo32->zona_sabotaggio[9], kyo32->zona_sabotaggio[10], kyo32->zona_sabotaggio[11], kyo32->zona_sabotaggio[12], kyo32->zona_sabotaggio[13], kyo32->zona_sabotaggio[14], kyo32->zona_sabotaggio[15],
+      return {kyo32->zona_1, kyo32->zona_2, kyo32->zona_3, kyo32->zona_4, kyo32->zona_5, kyo32->zona_6, kyo32->zona_7, kyo32->zona_8, kyo32->zona_9, kyo32->zona_10, kyo32->zona_11, kyo32->zona_12, kyo32->zona_13, kyo32->zona_14, kyo32->zona_15, kyo32->zona_16,
+      kyo32->zona_sabotaggio_1, kyo32->zona_sabotaggio_2, kyo32->zona_sabotaggio_3, kyo32->zona_sabotaggio_4, kyo32->zona_sabotaggio_5, kyo32->zona_sabotaggio_6, kyo32->zona_sabotaggio_7, kyo32->zona_sabotaggio_8, kyo32->zona_sabotaggio_9, kyo32->zona_sabotaggio_10, kyo32->zona_sabotaggio_11, kyo32->zona_sabotaggio_12, kyo32->zona_sabotaggio_13, kyo32->zona_sabotaggio_14, kyo32->zona_sabotaggio_15, kyo32->zona_sabotaggio_16,
+      kyo32->allarme_area_1, kyo32->allarme_area_2, kyo32->allarme_area_3,
       kyo32->warn_mancanza_rete, kyo32->warn_scomparsa_bpi, kyo32->warn_fusibile, kyo32->warn_batteria_bassa, kyo32->warn_guasto_linea_telefonica, kyo32->warn_codici_default, kyo32->warn_wireless,
       kyo32->sabotaggio_zona, kyo32->sabotaggio_chiave_falsa, kyo32->sabotaggio_bpi, kyo32->sabotaggio_sistema, kyo32->sabotaggio_jam, kyo32->sabotaggio_wireless};
     binary_sensors:
       - id: zona_1
-        name: "IR Sala"
+        name: "Zona IR Sala"
       - id: zona_2
-        name: "Porta Ingresso"
+        name: "Zona Porta Ingresso"
       - id: zona_3
-        name: "Finestra Sala"
+        name: "Zona Finestra Sala"
       - id: zona_4
-        name: "Porta Finestra Cucina"
+        name: "Zona Porta Finestra Cucina"
       - id: zona_5
-        name: "Finestra Cucina"
+        name: "Zona Finestra Cucina"
       - id: zona_6
-        name: "IR Taverna"
+        name: "Zona IR Taverna"
       - id: zona_7
-        name: "Basculanti Garage"
+        name: "Zona Basculanti Garage"
       - id: zona_8
-        name: "Portico"
+        name: "Zona Portico"
       - id: zona_9
-        name: "IR Camere"
+        name: "Zona IR Camere"
       - id: zona_10
-        name: "Finestra Cameretta"
+        name: "Zona Finestra Cameretta"
       - id: zona_11
-        name: "Finestra Camera Armadio"
+        name: "Zona Finestra Camera Armadio"
       - id: zona_12
-        name: "Finestra Camera Matrimoniale"
+        name: "Zona Finestra Camera Matrimoniale"
       - id: zona_13
-        name: "Finestra Bagno notte"
+        name: "Zona Finestra Bagno notte"
       - id: zona_14
-        name: "Zona 14  "
+        name: "Zona 14"
       - id: zona_15
         name: "Zona Inserimento"
       - id: zona_16
-        name: "Telecamere"
-      - id: sab_zona_1
-        name: "Sabotaggio IR Sala"
-      - id: sab_zona_2
-        name: "Sabotaggio Porta Ingresso"
-      - id: sab_zona_3
-        name: "Sabotaggio Finestra Sala"
-      - id: sab_zona_4
-        name: "Sabotaggio Porta Finestra Cucina"
-      - id: sab_zona_5
-        name: "Sabotaggio Finestra Cucina"
-      - id: sab_zona_6
-        name: "Sabotaggio IR Taverna"
-      - id: sab_zona_7
-        name: "Sabotaggio Basculanti Garage"
-      - id: sab_zona_8
-        name: "Sabotaggio Portico"
-      - id: sab_zona_9
-        name: "Sabotaggio IR Camere"
-      - id: sab_zona_10
-        name: "Sabotaggio Finestra Cameretta"
-      - id: sab_zona_11
-        name: "Sabotaggio Finestra Camera Armadio"
-      - id: sab_zona_12
-        name: "Sabotaggio Finestra Camera Matrimoniale"
-      - id: sab_zona_13
-        name: "Sabotaggio Finestra Bagno notte"
-      - id: sab_zona_14
-        name: "Sabotaggio Zona 14  "
-      - id: sab_zona_15
+        name: "Zona Telecamere"
+      - id: zona_sabotaggio_1
+        name: "Sabotaggio Zona IR Sala"
+      - id: zona_sabotaggio_2
+        name: "Sabotaggio Zona Porta Ingresso"
+      - id: zona_sabotaggio_3
+        name: "Sabotaggio Zona Finestra Sala"
+      - id: zona_sabotaggio_4
+        name: "Sabotaggio Zona Porta Finestra Cucina"
+      - id: zona_sabotaggio_5
+        name: "Sabotaggio Zona Finestra Cucina"
+      - id: zona_sabotaggio_6
+        name: "Sabotaggio Zona IR Taverna"
+      - id: zona_sabotaggio_7
+        name: "Sabotaggio Zona Basculanti Garage"
+      - id: zona_sabotaggio_8
+        name: "Sabotaggio Zona Portico"
+      - id: zona_sabotaggio_9
+        name: "Sabotaggio Zona IR Camere"
+      - id: zona_sabotaggio_10
+        name: "Sabotaggio Zona Finestra Cameretta"
+      - id: zona_sabotaggio_11
+        name: "Sabotaggio Zona Finestra Camera Armadio"
+      - id: zona_sabotaggio_12
+        name: "Sabotaggio Zona Finestra Camera Matrimoniale"
+      - id: zona_sabotaggio_13
+        name: "Sabotaggio Zona Finestra Bagno notte"
+      - id: zona_sabotaggio_14
+        name: "Sabotaggio Zona 14"
+      - id: zona_sabotaggio_15
         name: "Sabotaggio Zona Inserimento"
-      - id: sab_zona_16
-        name: "Sabotaggio Telecamere"
+      - id: zona_sabotaggio_16
+        name: "Sabotaggio Zona Telecamere"
+      - id: allarme_area_1
+        name: "Allarme Area Perimetrale"
+      - id: allarme_area_2
+        name: "Allarme Area Radar Interni"
+      - id: allarme_area_3
+        name: "Allarme Area Telecamere"
       - id: warn_mancanza_rete
+        name: "Warning Mancanza Rete"
       - id: warn_scomparsa_bpi
+        name: "Warning Scomparsa BPI"
       - id: warn_fusibile
+        name: "Warning Fusibile"
       - id: warn_batteria_bassa
+        name: "Warning Batteria Bassa"
       - id: warn_guasto_linea_telefonica
+        name: "Warning Guasto Linea Telefonica"
       - id: warn_codici_default
+        name: "Warning Codici Default"
       - id: warn_wireless
+        name: "Warning Wireless"
       - id: sabotaggio_zona
+        name: "Sabotaggio di Zona"
       - id: sabotaggio_chiave_falsa
+        name: "Sabotaggio Chiave Falsa"
       - id: sabotaggio_bpi
+        name: "Sabotaggio BPI"
       - id: sabotaggio_sistema
+        name: "Sabotaggio Sistema"
       - id: sabotaggio_jam
+        name: "Sabotaggio JAM"
       - id: sabotaggio_wireless
-    
+        name: "Saboraggio Wireless"
