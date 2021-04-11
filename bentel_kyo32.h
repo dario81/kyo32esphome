@@ -15,7 +15,7 @@ public:
   BinarySensor *zona_6 = new BinarySensor();
   BinarySensor *zona_7 = new BinarySensor();
   BinarySensor *zona_8 = new BinarySensor();
-  BinarySensor *zona_9 = new BinarySensor();
+  BinarySensor *zona_9 = new BinarySensor();  
   BinarySensor *zona_10 = new BinarySensor();
   BinarySensor *zona_11 = new BinarySensor();
   BinarySensor *zona_12 = new BinarySensor();
@@ -73,6 +73,105 @@ public:
   BinarySensor *zona_sabotaggio_31 = new BinarySensor();
   BinarySensor *zona_sabotaggio_32 = new BinarySensor();
 
+  BinarySensor *zona_esclusa_1 = new BinarySensor();
+  BinarySensor *zona_esclusa_2 = new BinarySensor();
+  BinarySensor *zona_esclusa_3 = new BinarySensor();
+  BinarySensor *zona_esclusa_4 = new BinarySensor();
+  BinarySensor *zona_esclusa_5 = new BinarySensor();
+  BinarySensor *zona_esclusa_6 = new BinarySensor();
+  BinarySensor *zona_esclusa_7 = new BinarySensor();
+  BinarySensor *zona_esclusa_8 = new BinarySensor();
+  BinarySensor *zona_esclusa_9 = new BinarySensor();  
+  BinarySensor *zona_esclusa_10 = new BinarySensor();
+  BinarySensor *zona_esclusa_11 = new BinarySensor();
+  BinarySensor *zona_esclusa_12 = new BinarySensor();
+  BinarySensor *zona_esclusa_13 = new BinarySensor();
+  BinarySensor *zona_esclusa_14 = new BinarySensor();
+  BinarySensor *zona_esclusa_15 = new BinarySensor();
+  BinarySensor *zona_esclusa_16 = new BinarySensor();
+  BinarySensor *zona_esclusa_17 = new BinarySensor();
+  BinarySensor *zona_esclusa_18 = new BinarySensor();
+  BinarySensor *zona_esclusa_19 = new BinarySensor();
+  BinarySensor *zona_esclusa_20 = new BinarySensor();
+  BinarySensor *zona_esclusa_21 = new BinarySensor();
+  BinarySensor *zona_esclusa_22 = new BinarySensor();
+  BinarySensor *zona_esclusa_23 = new BinarySensor();
+  BinarySensor *zona_esclusa_24 = new BinarySensor();
+  BinarySensor *zona_esclusa_25 = new BinarySensor();
+  BinarySensor *zona_esclusa_26 = new BinarySensor();
+  BinarySensor *zona_esclusa_27 = new BinarySensor();
+  BinarySensor *zona_esclusa_28 = new BinarySensor();
+  BinarySensor *zona_esclusa_29 = new BinarySensor();
+  BinarySensor *zona_esclusa_30 = new BinarySensor();
+  BinarySensor *zona_esclusa_31 = new BinarySensor();
+  BinarySensor *zona_esclusa_32 = new BinarySensor();
+
+  BinarySensor *memoria_allarme_zona_1 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_2 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_3 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_4 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_5 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_6 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_7 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_8 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_9 = new BinarySensor();  
+  BinarySensor *memoria_allarme_zona_10 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_11 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_12 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_13 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_14 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_15 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_16 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_17 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_18 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_19 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_20 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_21 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_22 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_23 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_24 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_25 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_26 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_27 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_28 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_29 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_30 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_31 = new BinarySensor();
+  BinarySensor *memoria_allarme_zona_32 = new BinarySensor();
+
+  BinarySensor *memoria_sabotaggio_zona_1 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_2 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_3 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_4 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_5 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_6 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_7 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_8 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_9 = new BinarySensor();  
+  BinarySensor *memoria_sabotaggio_zona_10 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_11 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_12 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_13 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_14 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_15 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_16 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_17 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_18 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_19 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_20 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_21 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_22 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_23 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_24 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_25 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_26 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_27 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_28 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_29 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_30 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_31 = new BinarySensor();
+  BinarySensor *memoria_sabotaggio_zona_32 = new BinarySensor();
+
   BinarySensor *warn_mancanza_rete = new BinarySensor("Warning Mancanza Rete");
   BinarySensor *warn_scomparsa_bpi = new BinarySensor("Warning Scomparsa BPI");;
   BinarySensor *warn_fusibile = new BinarySensor("Warning Fusibile");;
@@ -90,6 +189,61 @@ public:
   BinarySensor *allarme_area_7 = new BinarySensor();
   BinarySensor *allarme_area_8 = new BinarySensor();
 
+  BinarySensor *inserimento_totale_area_1 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_2 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_3 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_4 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_5 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_6 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_7 = new BinarySensor();
+  BinarySensor *inserimento_totale_area_8 = new BinarySensor();
+
+  BinarySensor *inserimento_parziale_area_1 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_2 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_3 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_4 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_5 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_6 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_7 = new BinarySensor();
+  BinarySensor *inserimento_parziale_area_8 = new BinarySensor();
+
+  BinarySensor *inserimento_parziale_ritardo_0_area_1 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_2 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_3 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_4 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_5 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_6 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_7 = new BinarySensor();
+  BinarySensor *inserimento_parziale_ritardo_0_area_8 = new BinarySensor();
+
+  BinarySensor *disinserita_area_1 = new BinarySensor();
+  BinarySensor *disinserita_area_2 = new BinarySensor();
+  BinarySensor *disinserita_area_3 = new BinarySensor();
+  BinarySensor *disinserita_area_4 = new BinarySensor();
+  BinarySensor *disinserita_area_5 = new BinarySensor();
+  BinarySensor *disinserita_area_6 = new BinarySensor();
+  BinarySensor *disinserita_area_7 = new BinarySensor();
+  BinarySensor *disinserita_area_8 = new BinarySensor();
+
+  BinarySensor *stato_uscita_1 = new BinarySensor();
+  BinarySensor *stato_uscita_2 = new BinarySensor();
+  BinarySensor *stato_uscita_3 = new BinarySensor();
+  BinarySensor *stato_uscita_4 = new BinarySensor();
+  BinarySensor *stato_uscita_5 = new BinarySensor();
+  BinarySensor *stato_uscita_6 = new BinarySensor();
+  BinarySensor *stato_uscita_7 = new BinarySensor();
+  BinarySensor *stato_uscita_8 = new BinarySensor();
+  BinarySensor *stato_uscita_9 = new BinarySensor();  
+  BinarySensor *stato_uscita_10 = new BinarySensor();
+  BinarySensor *stato_uscita_11 = new BinarySensor();
+  BinarySensor *stato_uscita_12 = new BinarySensor();
+  BinarySensor *stato_uscita_13 = new BinarySensor();
+  BinarySensor *stato_uscita_14 = new BinarySensor();
+  BinarySensor *stato_uscita_15 = new BinarySensor();
+  BinarySensor *stato_uscita_16 = new BinarySensor();
+
+  BinarySensor *stato_sirena = new BinarySensor();
+
   BinarySensor *sabotaggio_zona = new BinarySensor("Sabotaggio di Zona");;
   BinarySensor *sabotaggio_chiave_falsa = new BinarySensor("Sabotaggio Chiave Falsa");;
   BinarySensor *sabotaggio_bpi = new BinarySensor("Sabotaggio BPI");;
@@ -97,7 +251,8 @@ public:
   BinarySensor *sabotaggio_jam = new BinarySensor("Sabotaggio JAM");;
   BinarySensor *sabotaggio_wireless = new BinarySensor("Sabotaggio Wireless");;
 
-  byte cmdGetSensorStatus[6] = {0xf0, 0x04, 0xf0, 0x0a, 0x00, 0xee}; // f0 04 f0 0a 00 ee
+  byte cmdGetSensorStatus[6] = {0xf0, 0x04, 0xf0, 0x0a, 0x00, 0xee}; // f0 04 f0 0a 00 ee - Read Realtime Status and Trouble Status
+  byte cmdGetPartitionStatus[6] = {0xf0, 0x02, 0x15, 0x12, 0x00, 0x19}; // f0 02 15 12 00 19 - Partitions Status - Outputs Status - Tamper Memory - Bypassed Zones - Zone Alarm Memory - Zone Tamper Memory
   byte cmqGetSoftwareVersion[6] = {0xf0, 0x00, 0x00, 0x0b, 0x00, 0xfb}; // f0 00 00 0b 00 fb
 
   bool getParm(byte *cmd, int lcmd, byte ReadByes[], int &CountBytes)
@@ -152,7 +307,7 @@ public:
     register_service(&Bentel_Kyo32::on_deactivate_output, "deactivate_output",
                      {"pin", "output_number"}); 
 
-    this->set_update_interval(5000);
+    this->set_update_interval(1000);
   }
 
   void on_clock_setting(int pin, int day, int month, int year, int hour, int minutes, int seconds, int data_format)
@@ -192,9 +347,712 @@ public:
 
   void loop() override
   {
+    
   }
 
   void update() override
+  {
+    this->update_sensor_status();
+    delay(100);
+    this->update_aree_status  ();
+  }
+
+  void update_aree_status()
+  {
+    bool val;
+    byte Rx[255];
+    int Count = 0, i;
+
+    int StatoZona;
+    byte mask = 1;
+
+    val = getParm(cmdGetPartitionStatus, sizeof(cmdGetPartitionStatus), Rx, Count);
+
+    if(Count == 26)
+    {
+      // Ciclo AREE INSERITE
+      for (i = 0; i < 8; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+        StatoZona = (Rx[6] >> i) & 1;
+
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+        
+        if(i == 0)
+        {
+          inserimento_totale_area_1->publish_state(val);
+        }
+        else if(i == 1)
+        {
+          inserimento_totale_area_2->publish_state(val);
+        }
+        else if(i == 2)
+        {
+          inserimento_totale_area_3->publish_state(val);
+        }
+        else if(i == 3)
+        {
+          inserimento_totale_area_4->publish_state(val);
+        }
+        else if(i == 4)
+        {
+          inserimento_totale_area_5->publish_state(val);
+        }
+        else if(i == 5)
+        {
+          inserimento_totale_area_6->publish_state(val);
+        }
+        else if(i == 6)
+        {
+          inserimento_totale_area_7->publish_state(val);
+        }
+        else if(i == 7)
+        {
+          inserimento_totale_area_8->publish_state(val);
+        }
+      }
+
+      // Ciclo AREE INSERITE PARZIALI
+      for (i = 0; i < 8; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+        StatoZona = (Rx[7] >> i) & 1;
+
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+        
+        if(i == 0)
+        {
+          inserimento_parziale_area_1->publish_state(val);
+        }
+        else if(i == 1)
+        {
+          inserimento_parziale_area_2->publish_state(val);
+        }
+        else if(i == 2)
+        {
+          inserimento_parziale_area_3->publish_state(val);
+        }
+        else if(i == 3)
+        {
+          inserimento_parziale_area_4->publish_state(val);
+        }
+        else if(i == 4)
+        {
+          inserimento_parziale_area_5->publish_state(val);
+        }
+        else if(i == 5)
+        {
+          inserimento_parziale_area_6->publish_state(val);
+        }
+        else if(i == 6)
+        {
+          inserimento_parziale_area_7->publish_state(val);
+        }
+        else if(i == 7)
+        {
+          inserimento_parziale_area_8->publish_state(val);
+        }
+        
+      }
+
+
+      // Ciclo AREE INSERITE PARZIALI RITARDO 0
+      for (i = 0; i < 8; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+        StatoZona = (Rx[8] >> i) & 1;
+
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+        
+        if(i == 0)
+        {
+          inserimento_parziale_ritardo_0_area_1->publish_state(val);
+        }
+        else if(i == 1)
+        {
+          inserimento_parziale_ritardo_0_area_2->publish_state(val);
+        }
+        else if(i == 2)
+        {
+          inserimento_parziale_ritardo_0_area_3->publish_state(val);
+        }
+        else if(i == 3)
+        {
+          inserimento_parziale_ritardo_0_area_4->publish_state(val);
+        }
+        else if(i == 4)
+        {
+          inserimento_parziale_ritardo_0_area_5->publish_state(val);
+        }
+        else if(i == 5)
+        {
+          inserimento_parziale_ritardo_0_area_6->publish_state(val);
+        }
+        else if(i == 6)
+        {
+          inserimento_parziale_ritardo_0_area_7->publish_state(val);
+        }
+        else if(i == 7)
+        {
+          inserimento_parziale_ritardo_0_area_8->publish_state(val);
+        }
+      }
+
+
+      // Ciclo AREE DISINSERITE
+      for (i = 0; i < 8; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+        StatoZona = (Rx[9] >> i) & 1;
+
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+        
+        if(i == 0)
+        {
+          disinserita_area_1->publish_state(val);
+        }
+        else if(i == 1)
+        {
+          disinserita_area_2->publish_state(val);
+        }
+        else if(i == 2)
+        {
+          disinserita_area_3->publish_state(val);
+        }
+        else if(i == 3)
+        {
+          disinserita_area_4->publish_state(val);
+        }
+        else if(i == 4)
+        {
+          disinserita_area_5->publish_state(val);
+        }
+        else if(i == 5)
+        {
+          disinserita_area_6->publish_state(val);
+        }
+        else if(i == 6)
+        {
+          disinserita_area_7->publish_state(val);
+        }
+        else if(i == 7)
+        {
+          disinserita_area_8->publish_state(val);
+        }
+      }
+
+      // Ciclo STATO SIRENA
+      for (i = 0; i < 8; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+        StatoZona = (Rx[10] >> i) & 1;
+
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+        
+        if(i == 0)
+        {
+          stato_sirena->publish_state(val);
+        }
+      }
+
+
+      // CICLO STATO USCITE
+      for (i = 0; i < 32; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+
+        if (i >= 8 && i <= 15)
+          StatoZona = (Rx[11] >> (i - 8)) & 1;
+        else if (i <= 7)
+          StatoZona = (Rx[12] >> i) & 1;
+
+        //ESP_LOGD("custom", "The value of sensor is: %i", StatoZona);
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+
+        switch (i)
+        {
+        case 0:
+          stato_uscita_1->publish_state(val);
+          break;
+        case 1:
+          stato_uscita_2->publish_state(val);
+          break;
+        case 2:
+          stato_uscita_3->publish_state(val);
+          break;
+        case 3:
+          stato_uscita_4->publish_state(val);
+          break;
+        case 4:
+          stato_uscita_5->publish_state(val);
+          break;
+        case 5:
+          stato_uscita_6->publish_state(val);
+          break;
+        case 6:
+          stato_uscita_7->publish_state(val);
+          break;
+        case 7:
+          stato_uscita_8->publish_state(val);
+          break;
+        case 8:
+          stato_uscita_9->publish_state(val);
+          break;
+        case 9:
+          stato_uscita_10->publish_state(val);
+          break;
+        case 10:
+          stato_uscita_11->publish_state(val);
+          break;
+        case 11:
+          stato_uscita_12->publish_state(val);
+          break;
+        case 12:
+          stato_uscita_13->publish_state(val);
+          break;
+        case 13:
+          stato_uscita_14->publish_state(val);
+          break;
+        case 14:
+          stato_uscita_15->publish_state(val);
+          break;
+        case 15:
+          stato_uscita_16->publish_state(val);
+          break;
+        }
+      }
+
+
+      // CICLO ZONE ESCLUSE
+      for (i = 0; i < 32; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+
+        if (i >= 24)
+          StatoZona = (Rx[13] >> (i - 24)) & 1;
+        else if (i >= 16 && i <= 23)
+          StatoZona = (Rx[14] >> (i - 16)) & 1;
+        else if (i >= 8 && i <= 15)
+          StatoZona = (Rx[15] >> (i - 8)) & 1;
+        else if (i <= 7)
+          StatoZona = (Rx[16] >> i) & 1;
+
+        //ESP_LOGD("custom", "The value of sensor is: %i", StatoZona);
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+
+        switch (i)
+        {
+        case 0:
+          zona_esclusa_1->publish_state(val);
+          break;
+        case 1:
+          zona_esclusa_2->publish_state(val);
+          break;
+        case 2:
+          zona_esclusa_3->publish_state(val);
+          break;
+        case 3:
+          zona_esclusa_4->publish_state(val);
+          break;
+        case 4:
+          zona_esclusa_5->publish_state(val);
+          break;
+        case 5:
+          zona_esclusa_6->publish_state(val);
+          break;
+        case 6:
+          zona_esclusa_7->publish_state(val);
+          break;
+        case 7:
+          zona_esclusa_8->publish_state(val);
+          break;
+        case 8:
+          zona_esclusa_9->publish_state(val);
+          break;
+        case 9:
+          zona_esclusa_10->publish_state(val);
+          break;
+        case 10:
+          zona_esclusa_11->publish_state(val);
+          break;
+        case 11:
+          zona_esclusa_12->publish_state(val);
+          break;
+        case 12:
+          zona_esclusa_13->publish_state(val);
+          break;
+        case 13:
+          zona_esclusa_14->publish_state(val);
+          break;
+        case 14:
+          zona_esclusa_15->publish_state(val);
+          break;
+        case 15:
+          zona_esclusa_16->publish_state(val);
+          break;
+        case 16:
+          zona_esclusa_17->publish_state(val);
+          break;
+        case 17:
+          zona_esclusa_18->publish_state(val);
+          break;
+        case 18:
+          zona_esclusa_19->publish_state(val);
+          break;
+        case 19:
+          zona_esclusa_20->publish_state(val);
+          break;
+        case 20:
+          zona_esclusa_21->publish_state(val);
+          break;
+        case 21:
+          zona_esclusa_22->publish_state(val);
+          break;
+        case 22:
+          zona_esclusa_23->publish_state(val);
+          break;
+        case 23:
+          zona_esclusa_24->publish_state(val);
+          break;
+        case 24:
+          zona_esclusa_25->publish_state(val);
+          break;
+        case 25:
+          zona_esclusa_26->publish_state(val);
+          break;
+        case 26:
+          zona_esclusa_27->publish_state(val);
+          break;
+        case 27:
+          zona_esclusa_28->publish_state(val);
+          break;
+        case 28:
+          zona_esclusa_29->publish_state(val);
+          break;
+        case 29:
+          zona_esclusa_30->publish_state(val);
+          break;
+        case 30:
+          zona_esclusa_31->publish_state(val);
+          break;
+        case 31:
+          zona_esclusa_32->publish_state(val);
+          break;
+        }
+      }
+
+      // CICLO MEMORIA ALLARME ZONE
+      for (i = 0; i < 32; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+
+        if (i >= 24)
+          StatoZona = (Rx[17] >> (i - 24)) & 1;
+        else if (i >= 16 && i <= 23)
+          StatoZona = (Rx[18] >> (i - 16)) & 1;
+        else if (i >= 8 && i <= 15)
+          StatoZona = (Rx[19] >> (i - 8)) & 1;
+        else if (i <= 7)
+          StatoZona = (Rx[20] >> i) & 1;
+
+        //ESP_LOGD("custom", "The value of sensor is: %i", StatoZona);
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+
+        switch (i)
+        {
+        case 0:
+          memoria_allarme_zona_1->publish_state(val);
+          break;
+        case 1:
+          memoria_allarme_zona_2->publish_state(val);
+          break;
+        case 2:
+          memoria_allarme_zona_3->publish_state(val);
+          break;
+        case 3:
+          memoria_allarme_zona_4->publish_state(val);
+          break;
+        case 4:
+          memoria_allarme_zona_5->publish_state(val);
+          break;
+        case 5:
+          memoria_allarme_zona_6->publish_state(val);
+          break;
+        case 6:
+          memoria_allarme_zona_7->publish_state(val);
+          break;
+        case 7:
+          memoria_allarme_zona_8->publish_state(val);
+          break;
+        case 8:
+          memoria_allarme_zona_9->publish_state(val);
+          break;
+        case 9:
+          memoria_allarme_zona_10->publish_state(val);
+          break;
+        case 10:
+          memoria_allarme_zona_11->publish_state(val);
+          break;
+        case 11:
+          memoria_allarme_zona_12->publish_state(val);
+          break;
+        case 12:
+          memoria_allarme_zona_13->publish_state(val);
+          break;
+        case 13:
+          memoria_allarme_zona_14->publish_state(val);
+          break;
+        case 14:
+          memoria_allarme_zona_15->publish_state(val);
+          break;
+        case 15:
+          memoria_allarme_zona_16->publish_state(val);
+          break;
+        case 16:
+          memoria_allarme_zona_17->publish_state(val);
+          break;
+        case 17:
+          memoria_allarme_zona_18->publish_state(val);
+          break;
+        case 18:
+          memoria_allarme_zona_19->publish_state(val);
+          break;
+        case 19:
+          memoria_allarme_zona_20->publish_state(val);
+          break;
+        case 20:
+          memoria_allarme_zona_21->publish_state(val);
+          break;
+        case 21:
+          memoria_allarme_zona_22->publish_state(val);
+          break;
+        case 22:
+          memoria_allarme_zona_23->publish_state(val);
+          break;
+        case 23:
+          memoria_allarme_zona_24->publish_state(val);
+          break;
+        case 24:
+          memoria_allarme_zona_25->publish_state(val);
+          break;
+        case 25:
+          memoria_allarme_zona_26->publish_state(val);
+          break;
+        case 26:
+          memoria_allarme_zona_27->publish_state(val);
+          break;
+        case 27:
+          memoria_allarme_zona_28->publish_state(val);
+          break;
+        case 28:
+          memoria_allarme_zona_29->publish_state(val);
+          break;
+        case 29:
+          memoria_allarme_zona_30->publish_state(val);
+          break;
+        case 30:
+          memoria_allarme_zona_31->publish_state(val);
+          break;
+        case 31:
+          memoria_allarme_zona_32->publish_state(val);
+          break;
+        }
+      }
+
+
+      // CICLO MEMORIA SABOTAGGIO ZONE
+      for (i = 0; i < 32; i++)
+      {
+        mask = 00000001;
+        StatoZona = -1;
+
+        if (i >= 24)
+          StatoZona = (Rx[21] >> (i - 24)) & 1;
+        else if (i >= 16 && i <= 23)
+          StatoZona = (Rx[22] >> (i - 16)) & 1;
+        else if (i >= 8 && i <= 15)
+          StatoZona = (Rx[23] >> (i - 8)) & 1;
+        else if (i <= 7)
+          StatoZona = (Rx[24] >> i) & 1;
+
+        //ESP_LOGD("custom", "The value of sensor is: %i", StatoZona);
+        if (StatoZona == 1)
+        {
+          val = true;
+        }
+        else
+        {
+          val = false;
+        }
+
+        switch (i)
+        {
+        case 0:
+          memoria_sabotaggio_zona_1->publish_state(val);
+          break;
+        case 1:
+          memoria_sabotaggio_zona_2->publish_state(val);
+          break;
+        case 2:
+          memoria_sabotaggio_zona_3->publish_state(val);
+          break;
+        case 3:
+          memoria_sabotaggio_zona_4->publish_state(val);
+          break;
+        case 4:
+          memoria_sabotaggio_zona_5->publish_state(val);
+          break;
+        case 5:
+          memoria_sabotaggio_zona_6->publish_state(val);
+          break;
+        case 6:
+          memoria_sabotaggio_zona_7->publish_state(val);
+          break;
+        case 7:
+          memoria_sabotaggio_zona_8->publish_state(val);
+          break;
+        case 8:
+          memoria_sabotaggio_zona_9->publish_state(val);
+          break;
+        case 9:
+          memoria_sabotaggio_zona_10->publish_state(val);
+          break;
+        case 10:
+          memoria_sabotaggio_zona_11->publish_state(val);
+          break;
+        case 11:
+          memoria_sabotaggio_zona_12->publish_state(val);
+          break;
+        case 12:
+          memoria_sabotaggio_zona_13->publish_state(val);
+          break;
+        case 13:
+          memoria_sabotaggio_zona_14->publish_state(val);
+          break;
+        case 14:
+          memoria_sabotaggio_zona_15->publish_state(val);
+          break;
+        case 15:
+          memoria_sabotaggio_zona_16->publish_state(val);
+          break;
+        case 16:
+          memoria_sabotaggio_zona_17->publish_state(val);
+          break;
+        case 17:
+          memoria_sabotaggio_zona_18->publish_state(val);
+          break;
+        case 18:
+          memoria_sabotaggio_zona_19->publish_state(val);
+          break;
+        case 19:
+          memoria_sabotaggio_zona_20->publish_state(val);
+          break;
+        case 20:
+          memoria_sabotaggio_zona_21->publish_state(val);
+          break;
+        case 21:
+          memoria_sabotaggio_zona_22->publish_state(val);
+          break;
+        case 22:
+          memoria_sabotaggio_zona_23->publish_state(val);
+          break;
+        case 23:
+          memoria_sabotaggio_zona_24->publish_state(val);
+          break;
+        case 24:
+          memoria_sabotaggio_zona_25->publish_state(val);
+          break;
+        case 25:
+          memoria_sabotaggio_zona_26->publish_state(val);
+          break;
+        case 26:
+          memoria_sabotaggio_zona_27->publish_state(val);
+          break;
+        case 27:
+          memoria_sabotaggio_zona_28->publish_state(val);
+          break;
+        case 28:
+          memoria_sabotaggio_zona_29->publish_state(val);
+          break;
+        case 29:
+          memoria_sabotaggio_zona_30->publish_state(val);
+          break;
+        case 30:
+          memoria_sabotaggio_zona_31->publish_state(val);
+          break;
+        case 31:
+          memoria_sabotaggio_zona_32->publish_state(val);
+          break;
+        }
+      }
+    }
+  }
+
+  void update_sensor_status()
   {
     bool val;
     byte Rx[255];
