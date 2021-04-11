@@ -266,11 +266,11 @@ public:
     memset(ReadByes, 0, CountBytes);
 
     write_array(cmd, lcmd);
-    delay(100);
+    //delay(100);
     while (available() > 0)
     {
       RxBuff[index++] = read(); // Read a Byte
-      delay(3);
+      //delay(3);
     }
 
     if (index > 0)
@@ -307,7 +307,7 @@ public:
     register_service(&Bentel_Kyo32::on_deactivate_output, "deactivate_output",
                      {"pin", "output_number"}); 
 
-    this->set_update_interval(1000);
+    this->set_update_interval(250);
   }
 
   void on_clock_setting(int pin, int day, int month, int year, int hour, int minutes, int seconds, int data_format)
@@ -353,8 +353,9 @@ public:
   void update() override
   {
     this->update_sensor_status();
-    delay(100);
+    //delay(100);
     this->update_aree_status  ();
+    //delay(100);
   }
 
   void update_aree_status()
